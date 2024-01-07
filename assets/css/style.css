@@ -1,5 +1,5 @@
 .container * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -51,8 +51,52 @@ main {
     }
 
     main {
-        width: 65%;
+        width: 75%;
     }
 
+    aside {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5em;
+    }
+
+    header div {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    header div:nth-child(2) {
+        justify-content: flex-end;
+    }
+
+
+    header div ul {
+        display: flex;
+    }
+
+    header div ul li {
+        margin-left: 2em;
+        list-style: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin-top: 1em;
+    }
 
 }
